@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe AI</title>
+</head>
+<body>
+    <p class="startup-fade-in" id="title" title="Good luck beating this.">Tic Tac Toe AI</p>
+    <div id="board">
+        <div onclick="input(0)" class="cell border-down"></div>
+        <div onclick="input(1)" class="cell border-left border-down"></div>
+        <div onclick="input(2)" class="cell border-left border-down"></div>
+        <div onclick="input(3)" class="cell border-down"></div>
+        <div onclick="input(4)" class="cell border-left border-down"></div>
+        <div onclick="input(5)" class="cell border-left border-down"></div>
+        <div onclick="input(6)" class="cell"></div>
+        <div onclick="input(7)" class="cell border-left"></div>
+        <div onclick="input(8)" class="cell border-left"></div>
+    </div>
+
+    <div class="settings">
+        <p style="font-size: 24px">Let The AI Start First</p>
+        <label class="switch" title="Why would you want to do this?">
+            <input id="checkbox" type="checkbox" onclick="retry()">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div id="background-blur"></div>
+
+    <div id="winlose">You Win!</div>
+    <button id="retry" type="button" disabled="true" onclick="retry()">
+        <img src="retry.svg">
+    </button>
+
+    <p id="credit" title="The one and only Shejin ;)">Made by Shejin</p>
+    <script src="script.js"></script>
+</body>
+</html>
