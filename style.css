@@ -126,7 +126,6 @@ button:active {
     100% { rotate: 360deg}
 }
 
-
 .blur {
     position: absolute;
     top: 0;
@@ -236,4 +235,10 @@ input:checked + .slider:before {
     transform: translateY(-50%);
 
     animation: startup-slide-right 1s var(--timing-function) 1 forwards;
+}
+
+@media only screen and (max-width: 800px) {
+    .settings {
+        display: none;
+    }
 }
